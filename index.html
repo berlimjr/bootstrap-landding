@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <title>Bootstrap</title>
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
+    
+    <title>Login Page</title>
 </head>
-<body>
-    <nav class="navbar bg-body-tertiary d flex">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Navbar</span>
+<body class="d-flex flex-column vh-100 bg-primary">
+    <main class="h-100 d-flex justify-content-center align-items-center">
+      <form class="h-50 w-24 p-4 rounded bg-white">
+        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class=" d-flex justify-content-center">Login</h2>
+        <div class="mb-3 d-flex ">
+          <box-icon name='envelope' class="mt-2"></box-icon>
+          <input type="email" class="form-control ms-1" id="nome"  placeholder="username">
         </div>
-    </nav>
+        <div class="mb-3 d-flex">
+          <box-icon type='solid' name='lock' class="mt-2"></box-icon>  
+          <input type="password" class="form-control ms-1" id="email" placeholder="password">
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mt-1">Login</button>
+        <a href="https://www.instagram.com/kleber_ljs" class="mt-2 text-black d-flex justify-content-center text-sm-start ">Lost you password?</a>
+      </form>
+    </main>
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
